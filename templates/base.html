@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="/static/resources/menu/nav_styles.css">
+    <link rel="stylesheet" href="/static/vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body class="bg-light">
+<div class="container-fluid row border border-light d-flex justify-content-md-start justify-content-sm-center ">
+    <div class="col-md-3 col-sm-12 mt-5">
+        <nav class="w-100">
+            <ul class="mcd-menu col-sm-12 col-md-6">
+                <li class="w-100">
+                    <a href="/login/" class="active">
+                        <i class="fa fa-home"></i>
+                        <strong>Authentication</strong>
+                    </a>
+                </li>
+                <li class="w-100">
+                    <a href="/documentation/">
+                        <i class="fa fa-edit"></i>
+                        <strong>Documentation</strong>
+                    </a>
+                </li>
+                <li class="w-100">
+                    <a href="">
+                        <i class="fa fa-gift"></i>
+                        <strong>More Actions</strong>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-md-9 col-sm-12 p-3">
+        {% block main %}
+
+        {% endblock %}
+    </div>
+</div>
+<script src="/static/resources/menu/script.js"></script>
+</body>
+</html>
